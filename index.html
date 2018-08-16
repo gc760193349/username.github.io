@@ -16,7 +16,23 @@
 
 <p>大家好，我是渣渣灰，探晚蓝月，这是你重未完过的船新版本，只要五分钟，你就会爱这款游戏。</p>
 <script type="text/javascript">
-	
+	function sj(){
+	for(i = 0; i >= 0; i++){
+		str = Math.random().toString(36).substring(2,6);
+		suiji.innerHTML = str;
+		console.log(str);
+		alert(str);
+		var a = prompt("请输入验证")
+		if( a == str){
+			alert("正确");
+			break;
+		}
+		else{
+			alert("错误");
+		}
+	}
+}
+		sj();
 </script>
 </body>
 </html>
