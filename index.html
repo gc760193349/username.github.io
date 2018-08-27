@@ -2,34 +2,27 @@
 <body>
 	<head>
 		<title>你好你好</title>
-	<style type="text/css">
-			#yzm{
-				width: 200px;
-				height: 200px;
-				background-color:yellow;
-			}
-		</style>
 	</head>
 	<button>点击停留</button>
 		<div id="ac">
 			<p id="dy"></p>
 		</div>
-
 <script type="text/javascript">
 	var ac = document.getElementById('dy');
-		var an = document.getElementsByTagName('button')[0];
-		var sum = 6; 
-		var l = setInterval(time,1000);
-		function time(){
-			sum -= 1;
-			ac.innerHTML = sum;
-			if(sum == 0){
-				alert("要关闭了还不点击");
-			}
+	var an = document.getElementsByTagName('button')[0];
+	var sum = 6; 
+	var l = setInterval(time,1000);
+	function time(){
+	sum -= 1;
+	ac.innerHTML = sum;
+	if(sum == 0){
+		alert("要关闭了还不点击");
 		}
-		an.onclick = function(){
-			clearInterval(l);
-		}
+	}
+	else
+	an.onclick = function(){
+		clearInterval(l);
+	}
 </script>
 </body>
 </html>
