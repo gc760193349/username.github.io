@@ -14,28 +14,8 @@
 		<div id="ac">
 			<p id="dy"></p>
 		</div>
-	<div id="yzm">
-			<button onclick = "sj()"></button>
-		</div>
 
 <script type="text/javascript">
-	function sj(){
-	for(i = 0; i >= 0; i++){
-		str = Math.random().toString(36).substring(2,6);
-		suiji.innerHTML = str;
-		console.log(str);
-		alert(str);
-		var a = prompt("请输入验证")
-		if( a == str){
-			alert("正确");
-			break;
-		}
-		else{
-			alert("错误");
-		}
-	}
-}
-		sj();
 	var ac = document.getElementById('dy');
 		var an = document.getElementsByTagName('button')[0];
 		var sum = 6; 
