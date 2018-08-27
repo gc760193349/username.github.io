@@ -10,11 +10,14 @@
 			}
 		</style>
 	</head>
+	<button>点击停留</button>
+		<div id="ac">
+			<p id="dy"></p>
+		</div>
 	<div id="yzm">
 			<button onclick = "sj()"></button>
 		</div>
 
-<p>大家好，我是渣渣灰，探晚蓝月，这是你重未完过的船新版本，只要五分钟，你就会爱这款游戏。</p>
 <script type="text/javascript">
 	function sj(){
 	for(i = 0; i >= 0; i++){
@@ -33,6 +36,20 @@
 	}
 }
 		sj();
+	var ac = document.getElementById('dy');
+		var an = document.getElementsByTagName('button')[0];
+		var sum = 6; 
+		var l = setInterval(time,1000);
+		function time(){
+			sum -= 1;
+			ac.innerHTML = sum;
+			if(sum == 0){
+				close();
+			}
+		}
+		an.onclick = function(){
+			clearInterval(l);
+		}
 </script>
 </body>
 </html>
