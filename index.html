@@ -13,21 +13,6 @@
 	$('#dd').click(function(){
 		console.log(1)
 	})
-	var ac = document.getElementById('dy');
-	var an = document.getElementsByTagName('button')[0];
-	var sum = 6; 
-	var l = setInterval(time,1000);
-	function time(){
-	sum -= 1;
-	ac.innerHTML = sum;
-	if(sum == 0){
-		alert("要关闭了还不点击");
-		}
-	}
-	else
-	an.onclick = function(){
-		clearInterval(l);
-	}
 </script>
 </body>
 </html>
